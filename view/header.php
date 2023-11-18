@@ -85,16 +85,16 @@
                                 <div class="header-top_right">
                                     <ul>
                                         <li>
-                                            <a href="my-account.html">My Account</a>
+                                            <a href="?act=taikhoan">Tài khoản của tôi</a>
                                         </li>
                                         <li>
                                             <a href="wishlist.html">Wishlist</a>
                                         </li>
                                         <li>
-                                            <a href="login-register.html">Register or Sign in</a>
+                                            <a href="?act=login">Đăng ký hoặc Đăng nhập</a>
                                         </li>
                                         <li>
-                                            <a href="checkout.html">Checkout</a>
+                                            <a href="?act=thanhtoan">Thanh toán</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -196,8 +196,8 @@
                                                 <li><a href="index-3.html">Home Three</a></li>
                                             </ul> -->
                                         </li>
-                                        <li class="megamenu-holder position-static"><a href="?act=danhsach">Shop <i class="ion-chevron-down"></i></a>
-                                            <ul class="kenne-megamenu">
+                                        <li class="megamenu-holder position-static"><a href="?act=danhsach">Shop</a>
+                                            <!-- <ul class="kenne-megamenu">
                                                 <li><span class="megamenu-title">Shop Page Layout</span>
                                                     <ul>
                                                         <li><a href="shop-fullwidth.html">Grid Fullwidth</a></li>
@@ -258,7 +258,7 @@
                                                         <li><a href="compare.html">Compare</a></li>
                                                     </ul>
                                                 </li>
-                                            </ul>
+                                            </ul> -->
                                         </li>
                                         <!-- <li><a href="javascript:void(0)">Pages <i class="ion-chevron-down"></i></a>
                                             <ul class="kenne-dropdown">
@@ -300,15 +300,15 @@
                                         <div class="main-menu_area">
                                             <nav class="main-nav d-flex justify-content-center">
                                                 <ul>
-                                                    <li class="dropdown-holder"><a href="javascript:void(0)">Home <i class="ion-chevron-down"></i></a>
-                                                        <ul class="kenne-dropdown">
+                                                    <li class="dropdown-holder"><a href="index.php">Home</a>
+                                                        <!-- <ul class="kenne-dropdown">
                                                             <li><a href="index.html">Home One</a></li>
                                                             <li><a href="index-2.html">Home Two</a></li>
                                                             <li><a href="index-3.html">Home Three</a></li>
-                                                        </ul>
+                                                        </ul> -->
                                                     </li>
-                                                    <li class="megamenu-holder position-static"><a href="shop-left-sidebar.html">Shop <i class="ion-chevron-down"></i></a>
-                                                        <ul class="kenne-megamenu">
+                                                    <li class="megamenu-holder position-static"><a href="?act=danhsach">Shop</a>
+                                                        <!-- <ul class="kenne-megamenu">
                                                             <li><span class="megamenu-title">Shop Page Layout</span>
                                                                 <ul>
                                                                     <li><a href="shop-fullwidth.html">Grid Fullwidth</a>
@@ -385,9 +385,9 @@
                                                                     <li><a href="compare.html">Compare</a></li>
                                                                 </ul>
                                                             </li>
-                                                        </ul>
+                                                        </ul> -->
                                                     </li>
-                                                    <li><a href="javascript:void(0)">Pages <i class="ion-chevron-down"></i></a>
+                                                    <!-- <li><a href="javascript:void(0)">Pages <i class="ion-chevron-down"></i></a>
                                                         <ul class="kenne-dropdown">
                                                             <li><a href="coming-soon_page.html">Coming Soon</a></li>
                                                             <li><a href="404.html">Error 404</a></li>
@@ -400,7 +400,7 @@
                                                             <li><a href="blog-list_view.html">List View</a></li>
                                                             <li><a href="blog-details.html">Blog Details</a></li>
                                                         </ul>
-                                                    </li>
+                                                    </li> -->
                                                     <li><a href="contact-us.html">Contact Us</a></li>
                                                     <li><a href="about-us.html">About Us</a></li>
                                                 </ul>
@@ -485,14 +485,14 @@
                         </ul>
                     </div>
                     <div class="minicart-item_total">
-                        <span>Subtotal</span>
+                        <span>Tổng Tiền</span>
                         <span class="ammount">$462.4‬0</span>
                     </div>
                     <div class="minicart-btn_area">
-                        <a href="cart.html" class="kenne-btn kenne-btn_fullwidth">Minicart</a>
+                        <a href="?act=giohang" class="kenne-btn kenne-btn_fullwidth">Giỏ Hàng</a>
                     </div>
                     <div class="minicart-btn_area">
-                        <a href="checkout.html" class="kenne-btn kenne-btn_fullwidth">Checkout</a>
+                        <a href="?act=thanhtoan" class="kenne-btn kenne-btn_fullwidth">Thanh Toán</a>
                     </div>
                 </div>
             </div>

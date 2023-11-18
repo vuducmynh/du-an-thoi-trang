@@ -360,7 +360,7 @@
                                 <a class="list" data-target="listview" data-toggle="tooltip" data-placement="top" title="List View"><i class="fa fa-th-list"></i></a>
                             </div>
                             <div class="product-page_count">
-                                <p>Showing 1–9 of 40 results)</p>
+                                <p>Showing 1–9 of 40 results</p>
                             </div>
                             <div class="product-item-selection_area">
                                 <div class="product-short">

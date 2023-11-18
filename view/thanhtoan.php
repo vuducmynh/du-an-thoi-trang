@@ -5,7 +5,7 @@
                     <h2>Shop Related</h2>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li class="active">Checkout</li>
+                        <li class="active">Thanh Toán</li>
                     </ul>
                 </div>
             </div>
@@ -62,7 +62,7 @@
                             <div class="checkbox-form">
                                 <h3>Billing Details</h3>
                                 <div class="row">
-                                    <div class="col-md-12">
+                                    <!-- <div class="col-md-12">
                                         <div class="country-select clearfix">
                                             <label>Country <span class="required">*</span></label>
                                             <select class="myniceselect nice-select wide">
@@ -74,7 +74,7 @@
                                                 <option value="aus">Australia</option>
                                             </select>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="col-md-6">
                                         <div class="checkout-form-list">
                                             <label>First Name <span class="required">*</span></label>
@@ -87,30 +87,30 @@
                                             <input placeholder="" type="text">
                                         </div>
                                     </div>
-                                    <div class="col-md-12">
+                                    <!-- <div class="col-md-12">
                                         <div class="checkout-form-list">
                                             <label>Company Name</label>
                                             <input placeholder="" type="text">
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="col-md-12">
                                         <div class="checkout-form-list">
                                             <label>Address <span class="required">*</span></label>
                                             <input placeholder="Street address" type="text">
                                         </div>
                                     </div>
-                                    <div class="col-md-12">
+                                    <!-- <div class="col-md-12">
                                         <div class="checkout-form-list">
                                             <input placeholder="Apartment, suite, unit etc. (optional)" type="text">
                                         </div>
-                                    </div>
-                                    <div class="col-md-12">
+                                    </div> -->
+                                    <!-- <div class="col-md-12">
                                         <div class="checkout-form-list">
                                             <label>Town / City <span class="required">*</span></label>
                                             <input type="text">
                                         </div>
-                                    </div>
-                                    <div class="col-md-6">
+                                    </div> -->
+                                    <!-- <div class="col-md-6">
                                         <div class="checkout-form-list">
                                             <label>State / County <span class="required">*</span></label>
                                             <input placeholder="" type="text">
@@ -121,7 +121,7 @@
                                             <label>Postcode / Zip <span class="required">*</span></label>
                                             <input placeholder="" type="text">
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="col-md-6">
                                         <div class="checkout-form-list">
                                             <label>Email Address <span class="required">*</span></label>
