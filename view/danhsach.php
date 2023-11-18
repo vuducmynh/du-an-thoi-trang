@@ -2,10 +2,10 @@
         <div class="breadcrumb-area">
             <div class="container">
                 <div class="breadcrumb-content">
-                    <h2>Grid View</h2>
+                    <h2>Danh Mục</h2>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li class="active">Left Sidebar</li>
+                        <li><a href="index.html">Trang Chủ</a></li>
+                        <li class="active">Danh Mục</li>
                     </ul>
                 </div>
             </div>
@@ -20,9 +20,21 @@
                         <div class="kenne-sidebar-catagories_area">
                             <div class="kenne-sidebar_categories">
                                 <div class="kenne-categories_title first-child">
-                                    <h5>Filter by price</h5>
+                                    <h5>Tìm Kiếm Sản Phẩm</h5>
                                 </div>
-                                <div class="price-filter">
+                                <div class="timkiem" style="width: 250px">
+                                    <form action="?act=danhsach" method="post" style="display:flex">
+                                        <input type="text" placeholder="Tìm Kiếm" name="search" style="border:none">
+                                        <button class="search" style="font-size: 15px;box-shadow: 0 0 2px gray; border-radius:50%; width: 40px; height:40px"><i class="ion-ios-search"></i></button>
+                                    </form>
+                                </div>
+                                <!-- <div class="timkiem">
+                                    <form action="?act=danhsach" method="post">
+                                        <input type="text" name="search" id="" placeholder="Tìm Kiếm...">
+                                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                    </form>
+                                </div> -->
+                                <!-- <div class="price-filter">
                                     <div id="slider-range"></div>
                                     <div class="price-slider-amount">
                                         <div class="label-input">
@@ -31,16 +43,16 @@
                                             <button class="filter-btn">Filter</button>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="kenne-sidebar_categories category-module">
                                 <div class="kenne-categories_title">
-                                    <h5>Product Categories</h5>
+                                    <h5>Danh Mục Sản Phẩm</h5>
                                 </div>
                                 <div class="sidebar-categories_menu">
                                     <ul>
-                                        <li class="has-sub"><a href="javascript:void(0)">Apparel<i class="ion-ios-plus-empty"></i></a>
-                                            <ul>
+                                        <li class="has-sub"><a href="javascript:void(0)">Appare</a>
+                                            <!-- <ul>
                                                 <li><a href="javascript:void(0)">Maxime</a></li>
                                                 <li><a href="javascript:void(0)">Veniam Sed</a></li>
                                                 <li><a href="javascript:void(0)">Praesentium</a></li>
@@ -50,10 +62,10 @@
                                                 <li><a href="javascript:void(0)">Doloremque</a></li>
                                                 <li><a href="javascript:void(0)">Facilis</a></li>
                                                 <li><a href="javascript:void(0)">Cumque Magni</a></li>
-                                            </ul>
+                                            </ul> -->
                                         </li>
                                         <li><a href="javascript:void(0)">Footwear</a></li>
-                                        <li class="has-sub"><a href="javascript:void(0)">Sportswear <i class="ion-ios-plus-empty"></i></a>
+                                        <li class="has-sub"><a href="javascript:void(0)">Sportswear</a>
                                             <ul>
                                                 <li><a href="javascript:void(0)">Daylesford</a></li>
                                                 <li><a href="javascript:void(0)">Delaware</a></li>
@@ -65,7 +77,7 @@
                                         </li>
                                         <li><a href="javascript:void(0)">Traditional</a></li>
                                         <li><a href="javascript:void(0)">Formal Wear</a></li>
-                                        <li class="has-sub"><a href="javascript:void(0)">Accessories <i class="ion-ios-plus-empty"></i></a>
+                                        <li class="has-sub"><a href="javascript:void(0)">Accessories</a>
                                             <ul>
                                                 <li><a href="javascript:void(0)">Bedroom Furniture</a></li>
                                                 <li><a href="javascript:void(0)">Chairs</a></li>
@@ -78,7 +90,7 @@
                                                 <li><a href="javascript:void(0)">TV Stands</a></li>
                                             </ul>
                                         </li>
-                                        <li class="has-sub"><a href="javascript:void(0)">Watches & Jewelry <i class="ion-ios-plus-empty"></i></a>
+                                        <li class="has-sub"><a href="javascript:void(0)">Watches & Jewelry</a>
                                             <ul>
                                                 <li><a href="javascript:void(0)">Candleholders</a></li>
                                                 <li><a href="javascript:void(0)">Candles</a></li>
@@ -91,7 +103,7 @@
                                                 <li><a href="javascript:void(0)">Wall Mirrors</a></li>
                                             </ul>
                                         </li>
-                                        <li class="has-sub"><a href="javascript:void(0)">Luggage <i class="ion-ios-plus-empty"></i></a>
+                                        <li class="has-sub"><a href="javascript:void(0)">Luggage</a>
                                             <ul>
                                                 <li><a href="javascript:void(0)">Bowls</a></li>
                                                 <li><a href="javascript:void(0)">Cups, Mugs & Saucers</a></li>
@@ -104,7 +116,7 @@
                                                 <li><a href="javascript:void(0)">Serveware</a></li>
                                             </ul>
                                         </li>
-                                        <li class="has-sub"><a href="javascript:void(0)">Handbag <i class="ion-ios-plus-empty"></i></a>
+                                        <li class="has-sub"><a href="javascript:void(0)">Handbag</a>
                                             <ul>
                                                 <li><a href="javascript:void(0)">Coffee & side tables</a></li>
                                                 <li><a href="javascript:void(0)">Living room lighting</a></li>
@@ -119,7 +131,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="kenne-sidebar_categories">
+                            <!-- <div class="kenne-sidebar_categories">
                                 <div class="kenne-categories_title">
                                     <h5>Color</h5>
                                 </div>
@@ -134,7 +146,7 @@
                                         <a href="javascript:void(0)">Gold (3)</a>
                                     </li>
                                 </ul>
-                            </div>
+                            </div> -->
                             <div class="kenne-sidebar_categories list-product_area">
                                 <div class="kenne-categories_title">
                                     <h5>Recent Post</h5>
@@ -200,7 +212,7 @@
                                     <div class="product-item">
                                         <div class="single-product">
                                             <div class="product-img">
-                                                <a href="single-product.html">
+                                                <a href="?act=chitietsp">
                                                     <img class="primary-img" src="assets/images/product/3-1.jpg" alt="Kenne's Product Image">
                                                 </a>
                                             </div>
@@ -372,7 +384,7 @@
                                 <div class="product-item">
                                     <div class="single-product">
                                         <div class="product-img">
-                                            <a href="single-product.html">
+                                            <a href="?act=chitietsp">
                                                 <img class="primary-img" src="assets/images/product/1-1.jpg" alt="Kenne's Product Image">
                                                 <img class="secondary-img" src="assets/images/product/1-2.jpg" alt="Kenne's Product Image">
                                             </a>

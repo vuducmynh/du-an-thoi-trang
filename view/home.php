@@ -63,21 +63,21 @@
                         <div class="col-lg-12">
                             <div class="transparent-header_nav position-relative">
                                 <div class="header-logo_area">
-                                    <a href="index.html">
+                                    <a href="index.php">
                                         <img src="assets/images/menu/logo/1.png" alt="Header Logo">
                                     </a>
                                 </div>
                                 <div class="main-menu_area d-none d-lg-block">
                                     <nav class="main-nav d-flex justify-content-center">
                                         <ul>
-                                            <li class="dropdown-holder"><a href="javascript:void(0)">Home <i class="ion-chevron-down"></i></a>
-                                                <ul class="kenne-dropdown">
+                                            <li class="dropdown-holder"><a href="index.php">Trang Chủ</a>
+                                                <!-- <ul class="kenne-dropdown">
                                                     <li><a href="index.html">Home One</a></li>
                                                     <li><a href="index-2.html">Home Two</a></li>
                                                     <li><a href="index-3.html">Home Three</a></li>
-                                                </ul>
+                                                </ul> -->
                                             </li>
-                                            <li class="megamenu-holder position-static"><a href="shop-left-sidebar.html">Shop <i class="ion-chevron-down"></i></a>
+                                            <li class="megamenu-holder position-static"><a href="?act=danhsach">Shop <i class="ion-chevron-down"></i></a>
                                                 <ul class="kenne-megamenu">
                                                     <li><span class="megamenu-title">Shop Page Layout</span>
                                                         <ul>
@@ -148,20 +148,20 @@
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li><a href="javascript:void(0)">Pages <i class="ion-chevron-down"></i></a>
+                                            <!-- <li><a href="javascript:void(0)">Pages <i class="ion-chevron-down"></i></a>
                                                 <ul class="kenne-dropdown">
                                                     <li><a href="coming-soon_page.html">Coming Soon</a></li>
                                                     <li><a href="404.html">Error 404</a></li>
                                                     <li><a href="faq.html">FAQ</a></li>
                                                 </ul>
-                                            </li>
-                                            <li><a href="javascript:void(0)">Blog <i class="ion-chevron-down"></i></a>
+                                            </li> -->
+                                            <!-- <li><a href="javascript:void(0)">Blog <i class="ion-chevron-down"></i></a>
                                                 <ul class="kenne-dropdown">
                                                     <li><a href="blog-grid_view.html">Grid View</a></li>
                                                     <li><a href="blog-list_view.html">List View</a></li>
                                                     <li><a href="blog-details.html">Blog Details</a></li>
                                                 </ul>
-                                            </li>
+                                            </li> -->
                                             <li><a href="contact-us.html">Contact Us</a></li>
                                             <li><a href="about-us.html">About Us</a></li>
                                         </ul>
@@ -833,7 +833,7 @@
                             <p class="short-desc">Aliquam error eos cumque aut repellat quasi accusantium inventore
                                 necessitatibus. Vel quisquam distinctio in inventore dolorum.</p>
                             <div class="slide-btn">
-                                <a class="kenne-btn" href="shop-left-sidebar.html">shop now</a>
+                                <a class="kenne-btn" href="?act=danhsach">shop now</a>
                             </div>
                         </div>
                     </div>
@@ -846,7 +846,7 @@
                             <h2>Stylist <br> Female Clothes</h2>
                             <p class="short-desc-2">Made from Soft, Durable, US-grown Supima cotton.</p>
                             <div class="slide-btn">
-                                <a class="kenne-btn" href="shop-left-sidebar.html">shop now</a>
+                                <a class="kenne-btn" href="?act=danhsach">shop now</a>
                             </div>
                         </div>
                     </div>
