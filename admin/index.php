@@ -1,5 +1,7 @@
 <?php 
 include 'header.php';
-include 'dashboard.php';
+include 'aside.php';
+include 'dashboard/dashboard.php';
+include 'footer.php';
 
 ?>
