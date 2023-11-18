@@ -41,10 +41,11 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="white-box">
+                            <form action="?act=danhmuc" method="post">
                             <a href="?act=adddanhmuc"><button type="button" class="btn btn-success text-white">Thêm danh mục</button></a>
-                            <button type="button" class="btn btn-primary">Chọn tất cả</button>
-                            <button type="button" class="btn btn-primary">Bỏ chọn tất cả</button>
-                            <button type="submit" class="btn btn-danger text-white">Xóa các mục chọn</button>
+                            <button type="button" id="checkall" class="btn btn-primary">Chọn tất cả</button>
+                            <button type="button" id="clearall" class="btn btn-primary">Bỏ chọn tất cả</button>
+                            <button type="submit" id="deleteall" class="btn btn-danger text-white" onclick="return confirm('Bạn có muốn xóa không')">Xóa các mục chọn</button>
                             <div class="table-responsive">
                                 <table class="table text-nowrap">
                                     <thead>
@@ -57,20 +58,24 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        <?php foreach($dsdm as $dm): 
+                                            extract($dm);
+                                        ?>
                                         <tr>
-                                            <td><input type="checkbox" name="" id=""></td>
-                                            <td>1</td>
-                                            <td>Deshmukh</td>
-                                            <td>Prohaska</td>
+                                            <td class="text-center"><input type="checkbox" class="checkbox" name="id[]" value="<?=$id?>"></td>
+                                            <td><?=$id?></td>
+                                            <td><?=$tendanhmuc?></td>
+                                            <td><?=$trangthai == 1 ? 'Hiện' : 'Ẩn'?></td>
                                             <td>
-                                                <a href="?act=editdanhmuc"><button type="button" class="btn btn-warning">Sửa</button></a>
-                                                <a href="?act=danhmuc"><button type="button" class="btn btn-danger">Xóa</button></a>
+                                                <a href="?act=editdanhmuc&iddm=<?=$id?>"><button type="button" class="btn btn-warning">Sửa</button></a>
+                                                <a href="?act=danhmuc&iddm=<?=$id?>"><button type="button" class="btn btn-danger" onclick="return confirm('Bạn có muốn xóa không')">Xóa</button></a>
                                             </td>
-                                        </tr>
-                                       
+                                        </tr> 
+                                       <?php endforeach ?>
                                     </tbody>
                                 </table>
                             </div>
+                            </form>
                         </div>
                     </div>
                 </div>

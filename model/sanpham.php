@@ -1,8 +1,13 @@
 <?php
-
 function load_all_sanpham()
 {
-    $sql = "SELECT sanpham.*, tendanhmuc FROM sanpham JOIN danhmuc ON sanpham.madanhmuc=danhmuc.id WHERE trangthai = 1 ORDER BY id DESC";
+    $sql = "SELECT sanpham.*, tendanhmuc FROM sanpham JOIN danhmuc ON sanpham.madanhmuc=danhmuc.id ORDER BY id DESC";
+    return pdo_query($sql);
+}
+
+function load_all_sanpham_hien()
+{
+    $sql = "SELECT sanpham.*, tendanhmuc FROM sanpham JOIN danhmuc ON sanpham.madanhmuc=danhmuc.id WHERE sanpham.trangthai = 1 ORDER BY id DESC";
     return pdo_query($sql);
 }
 

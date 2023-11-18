@@ -42,13 +42,13 @@
                     <div class="col-sm-12">
                         <div class="white-box">
                             <div class="form-group">
-                                <form action="" method="post">
+                                <form action="?act=adddanhmuc" method="post">
                                     <button type="submit" class="btn btn-success text-white">Thêm mới</button>
                                     <button type="reset" class="btn btn-primary">Nhập lại</button>
                                     <a href="?act=danhmuc"><button type="button" class="btn btn-primary">Danh sách</button></a>
                                     <div class="mb-3 mt-3">
                                       <label for="">Tên danh mục:</label>
-                                      <input type="text" class="form-control" id="" placeholder="Nhập tên danh mục" name="">
+                                      <input type="text" class="form-control" id="" placeholder="Nhập tên danh mục" name="tendanhmuc">
                                     </div>
                                     <div class="mb-3">
                                         <label for="">Trạng thái:</label>

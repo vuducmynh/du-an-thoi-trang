@@ -61,10 +61,10 @@
                                     <div class="mb-3 mt-3">
                                       <label for="">Kích cỡ:</label>
                                       <select class="form-select-sm form-control" name="kichco" id="">
-                                        <option value="xl">XL</option>
-                                        <option value="l">L</option>
-                                        <option value="m">M</option>
-                                        <option value="s">S</option>
+                                        <option value="XL">XL</option>
+                                        <option value="L">L</option>
+                                        <option value="M">M</option>
+                                        <option value="S">S</option>
                                       </select>
                                     </div>
                                     <div class="mb-3 mt-3">

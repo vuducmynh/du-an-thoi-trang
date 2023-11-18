@@ -42,9 +42,9 @@
                     <div class="col-sm-12">
                         <div class="white-box">
                             <a href="?act=addsanpham"><button type="button" class="btn btn-success text-white">Thêm sản phẩm</button></a>
-                            <button type="button" class="btn btn-primary">Chọn tất cả</button>
-                            <button type="button" class="btn btn-primary">Bỏ chọn tất cả</button>
-                            <button type="submit" class="btn btn-danger text-white">Xóa các mục chọn</button>
+                            <button type="button" id="checkall" class="btn btn-primary">Chọn tất cả</button>
+                            <button type="button" id="clearall" class="btn btn-primary">Bỏ chọn tất cả</button>
+                            <button type="submit" id="deleteall" class="btn btn-danger text-white">Xóa các mục chọn</button>
                             <div class="table-responsive">
                                 <table class="table text-nowrap">
                                     <thead>
@@ -63,22 +63,32 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        <?php foreach($dssp as $sp):
+                                            extract($sp);
+                                        ?>
                                         <tr>
                                             <td><input type="checkbox" name="" id=""></td>
-                                            <td>1</td>
-                                            <td>Deshmukh</td>
-                                            <td>Prohaska</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
+                                            <td><?=$id?></td>
+                                            <td><?=$tensanpham?></td>
                                             <td>
-                                                <a href="?act=editsanpham"><button type="button" class="btn btn-warning">Sửa</button></a>
-                                                <a href="?act=sanpham"><button type="button" class="btn btn-danger">Xóa</button></a>
+                                                <img src="/assets/images/product/ . <?=$hinh?>" alt=" " width="200px">
+                                            </td>
+                                            <td><?=$thuonghieu?></td>
+                                            <td><?=$kichco?></td>
+                                            <td><?=$soluong?></td>
+                                            <td><?=$gia?></td>
+                                            <td>
+                                                <?=$tendanhmuc?>
+                                            </td>
+                                            <td>
+                                                <?=$trangthai == 1 ? 'Hiện' : 'Ẩn'?>
+                                            </td>
+                                            <td>
+                                                <a href="?act=editsanpham&idsp<?=$id?>"><button type="button" class="btn btn-warning">Sửa</button></a>
+                                                <a href="?act=sanpham&idsp<?=$id?>"><button type="button" class="btn btn-danger">Xóa</button></a>
                                             </td>
                                         </tr>
+                                        <?php endforeach ?>
                                     </tbody>
                                 </table>
                             </div>

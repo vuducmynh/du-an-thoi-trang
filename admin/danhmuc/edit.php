@@ -48,13 +48,13 @@
                                     <a href="?act=danhmuc"><button type="button" class="btn btn-primary">Danh sách</button></a>
                                     <div class="mb-3 mt-3">
                                       <label for="">Tên danh mục:</label>
-                                      <input type="text" class="form-control" id="" placeholder="Nhập tên danh mục" name="">
+                                      <input type="text" class="form-control" id="" placeholder="Nhập tên danh mục" name="tendanhmuc" value="<?=$tendanhmuc?>">
                                     </div>
                                     <div class="mb-3">
                                         <label for="">Trạng thái:</label>
                                         <div class="form-control">
-                                            <input type="radio" name="trangthai" id="" value="1" checked> Hiện
-                                            <input type="radio" name="trangthai" id="" value="0"> Ẩn
+                                            <input type="radio" name="trangthai" id="" value="1" <?= $trangthai == 1 ? 'checked' : '' ?>> Hiện
+                                            <input type="radio" name="trangthai" id="" value="0" <?= $trangthai == 0 ? 'checked' : '' ?>> Ẩn
                                         </div>
                                     </div>
                                     

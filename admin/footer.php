@@ -33,5 +33,44 @@
  <script src="plugins/bower_components/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
  <script src="js/pages/dashboards/dashboard1.js"></script>
  </body>
+ <script>
+          let checkall = document.getElementById('checkall');
+          let clearall = document.getElementById('clearall');
+          let deleteall = document.getElementById('deleteall');
 
+          let checkbox = document.getElementsByClassName('checkbox');
+
+          // Check All
+          checkall.addEventListener('click', function() {
+            for (let i = 0; i < checkbox.length; i++) {
+              checkbox[i].checked = true;
+
+            }
+          })
+          clearall.addEventListener('click', function() {
+            for (let i = 0; i < checkbox.length; i++) {
+              checkbox[i].checked = false;
+
+            }
+          })
+
+          //Kiểm tra xem admin đã chọn chưa
+          function check_select() {
+            for (let i = 0; i < checkbox.length; i++) {
+              if (checkbox[i].checked == true) {
+                return true;
+              }
+            }
+            return false;
+          }
+
+          // Xử lí xóa khi chưa chọn thì không cho gửi dữ liệu lên server
+          deleteall.addEventListener('click', function(event) {
+            if (check_select() == false) {
+              alert("Bạn cần chọn ít nhất 1 mục để xóa");
+              event.preventDefault(); // Khoong cho phép kích hoạt sự kiện gửi dữ liệu lên server
+              return false;
+            }
+          })
+        </script>
  </html>

@@ -42,9 +42,9 @@
                     <div class="col-sm-12">
                         <div class="white-box">
                             <a href="?act=addnguoidung"><button type="button" class="btn btn-success text-white">Thêm người dùng</button></a>
-                            <button type="button" class="btn btn-primary">Chọn tất cả</button>
-                            <button type="button" class="btn btn-primary">Bỏ chọn tất cả</button>
-                            <button type="submit" class="btn btn-danger text-white">Xóa các mục chọn</button>
+                            <button type="button" id="checkall" class="btn btn-primary">Chọn tất cả</button>
+                            <button type="button" id="clearall" class="btn btn-primary">Bỏ chọn tất cả</button>
+                            <button type="submit" id="deleteall" class="btn btn-danger text-white">Xóa các mục chọn</button>
                             <div class="table-responsive">
                                 <table class="table text-nowrap">
                                     <thead>
