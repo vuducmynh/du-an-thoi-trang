@@ -38,16 +38,16 @@
                          <span class="hide-menu">Đơn hàng</span>
                      </a>
                  </li>
-                 <li class="sidebar-item">
+                 <!-- <li class="sidebar-item">
                      <a class="sidebar-link waves-effect waves-dark sidebar-link" href="blank.html" aria-expanded="false">
                          <i class="fa fa-columns" aria-hidden="true"></i>
                          <span class="hide-menu">Blank Page</span>
                      </a>
-                 </li>
+                 </li> -->
                  <li class="sidebar-item">
                      <a class="sidebar-link waves-effect waves-dark sidebar-link" href="404.html" aria-expanded="false">
                          <i class="fa fa-info-circle" aria-hidden="true"></i>
-                         <span class="hide-menu">Feedback</span>
+                         <span class="hide-menu">Bình luận</span>
                      </a>
                  </li>
                  <!-- <li class="text-center p-20 upgrade-btn">
