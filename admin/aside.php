@@ -9,43 +9,43 @@
              <ul id="sidebarnav">
                  <!-- User Profile-->
                  <li class="sidebar-item pt-2">
-                     <a class="sidebar-link waves-effect waves-dark sidebar-link" href="dashboard.html" aria-expanded="false">
+                     <a class="sidebar-link waves-effect waves-dark sidebar-link" href="?act=" aria-expanded="false">
                          <i class="far fa-clock" aria-hidden="true"></i>
                          <span class="hide-menu">Dashboard</span>
                      </a>
                  </li>
                  <li class="sidebar-item">
-                     <a class="sidebar-link waves-effect waves-dark sidebar-link" href="index/act?=profile" aria-expanded="false">
+                     <a class="sidebar-link waves-effect waves-dark sidebar-link" href="?act=nguoidung" aria-expanded="false">
                          <i class="fa fa-user" aria-hidden="true"></i>
                          <span class="hide-menu">Người dùng</span>
                      </a>
                  </li>
                  <li class="sidebar-item">
-                     <a class="sidebar-link waves-effect waves-dark sidebar-link" href="basic-table.html" aria-expanded="false">
+                     <a class="sidebar-link waves-effect waves-dark sidebar-link" href="?act=danhmuc" aria-expanded="false">
                          <i class="fa fa-table" aria-hidden="true"></i>
                          <span class="hide-menu">Danh mục</span>
                      </a>
                  </li>
                  <li class="sidebar-item">
-                     <a class="sidebar-link waves-effect waves-dark sidebar-link" href="fontawesome.html" aria-expanded="false">
+                     <a class="sidebar-link waves-effect waves-dark sidebar-link" href="?act=sanpham" aria-expanded="false">
                          <i class="fa fa-font" aria-hidden="true"></i>
                          <span class="hide-menu">Sản phẩm</span>
                      </a>
                  </li>
                  <li class="sidebar-item">
-                     <a class="sidebar-link waves-effect waves-dark sidebar-link" href="map-google.html" aria-expanded="false">
+                     <a class="sidebar-link waves-effect waves-dark sidebar-link" href="?act=donhang" aria-expanded="false">
                          <i class="fa fa-globe" aria-hidden="true"></i>
                          <span class="hide-menu">Đơn hàng</span>
                      </a>
                  </li>
                  <li class="sidebar-item">
-                     <a class="sidebar-link waves-effect waves-dark sidebar-link" href="blank.html" aria-expanded="false">
+                     <a class="sidebar-link waves-effect waves-dark sidebar-link" href="?act=thongke" aria-expanded="false">
                          <i class="fa fa-columns" aria-hidden="true"></i>
-                         <span class="hide-menu">Blank Page</span>
+                         <span class="hide-menu">Thống kê</span>
                      </a>
                  </li>
                  <li class="sidebar-item">
-                     <a class="sidebar-link waves-effect waves-dark sidebar-link" href="404.html" aria-expanded="false">
+                     <a class="sidebar-link waves-effect waves-dark sidebar-link" href="?act=binhluan" aria-expanded="false">
                          <i class="fa fa-info-circle" aria-hidden="true"></i>
                          <span class="hide-menu">Feedback</span>
                      </a>
