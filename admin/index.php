@@ -7,25 +7,52 @@ require_once '../model/danhmuc.php';
 
 
 $act = $_GET['act'] ?? '';
+$check = true;
 switch ($act) {
     case 'home':
-        $VIEW = "dashboard/dashboard.php";
+        $VIEW = "home.php";
         break;
-    case '':
-        $VIEW = "dashboard/dashboard.php";
+
+    case 'nguoidung':
+        $VIEW = "nguoidung/list.php";
         break;
-    case '':
-        $VIEW = "dashboard/dashboard.php";
+    case 'addnguoidung':
+        $VIEW = "nguoidung/add.php";
         break;
-    case '':
-        $VIEW = "dashboard/dashboard.php";
+    case 'editnguoidung':
+        $VIEW = "nguoidung/edit.php";
         break;
-    case '':
-        $VIEW = "dashboard/dashboard.php";
+
+    case 'danhmuc':
+        $VIEW = "danhmuc/list.php";
+        break;
+    case 'adddanhmuc':
+        $VIEW = "danhmuc/add.php";
+        break;
+    case 'editdanhmuc':
+        $VIEW = "danhmuc/edit.php";
+        break;
+
+    case 'sanpham':
+        $VIEW = "sanpham/list.php";
+        break;
+    case 'addsanpham':
+        $VIEW = "sanpham/add.php";
+        break;
+    case 'editsanpham':
+        $VIEW = "sanpham/edit.php";
+        break;
+
+    case 'binhluan':
+        $VIEW = "binhluan/list.php";
+        break;
+    case 'chitietbinhluan':
+        $VIEW = "binhluan/chitietbl.php";
         break;
 
     default:
-        $VIEW = "dashboard/dashboard.php";
+        $check = false;
+        $VIEW = "404.php";
         break;
 }
 
@@ -36,14 +63,11 @@ switch ($act) {
 
 
 
-
-
-
-
-
-
-
-include 'header.php';
-include 'aside.php';
-//include $VIEW;
-include 'footer.php';
+if ($check) {
+    include 'header.php';
+    include 'aside.php';
+}
+include $VIEW;
+if ($check) {
+    include 'footer.php';
+}
