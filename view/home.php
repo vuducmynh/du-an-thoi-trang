@@ -407,10 +407,10 @@
                         <span class="ammount">$462.4‬0</span>
                     </div>
                     <div class="minicart-btn_area">
-                        <a href="cart.html" class="kenne-btn kenne-btn_fullwidth">Minicart</a>
+                        <a href="?act=giohang" class="kenne-btn kenne-btn_fullwidth">Giỏ Hàng</a>
                     </div>
                     <div class="minicart-btn_area">
-                        <a href="checkout.html" class="kenne-btn kenne-btn_fullwidth">Checkout</a>
+                        <a href="?act=thanhtoan" class="kenne-btn kenne-btn_fullwidth">Thanh Toán</a>
                     </div>
                 </div>
             </div>
@@ -962,7 +962,7 @@
                             <div class="product-item">
                                 <div class="single-product">
                                     <div class="product-img">
-                                        <a href="single-product.html">
+                                        <a href="?act=chitietsp">
                                             <img class="primary-img" src="assets/images/product/1-1.jpg" alt="Kenne's Product Image">
                                             <img class="secondary-img" src="assets/images/product/1-2.jpg" alt="Kenne's Product Image">
                                         </a>
