@@ -42,23 +42,24 @@
                     <div class="col-sm-12">
                         <div class="white-box">
                             <div class="form-group">
-                                <form action="" method="post">
+                                <form action="" method="post" enctype="multipart/form-data">
                                     <button type="submit" class="btn btn-success text-white">Sửa người dùng</button>
                                     <button type="reset" class="btn btn-primary">Nhập lại</button>
                                     <a href="?act=nguoidung"><button type="button" class="btn btn-primary">Danh sách</button></a>
                                     <div class="mb-3 mt-3">
                                         <label for="">Họ và tên:</label>
-                                        <input type="text" class="form-control" id="" placeholder="Nhập họ tên"
+                                        <input type="text" class="form-control" id="" value="<?=$hoten?>"
                                             name="hoten">
+                                            <input type="hidden" name="idnd" value="<?=$id?>">
                                     </div>
                                     <div class="mb-3 mt-3">
                                         <label for="">Email:</label>
-                                        <input type="text" class="form-control" id="" placeholder="Nhập email"
+                                        <input type="text" class="form-control" id="" value="<?=$email?>"
                                             name="email">
                                     </div>
                                     <div class="mb-3 mt-3">
                                         <label for="">Mật khẩu:</label>
-                                        <input type="text" class="form-control" id="" placeholder="Nhập mật khẩu"
+                                        <input type="text" class="form-control" id="" value="<?=$matkhau?>"
                                             name="matkhau">
                                     </div>
                                     <div class="mb-3 mt-3">
@@ -68,22 +69,12 @@
                                     </div>
                                     <div class="mb-3 mt-3">
                                         <label for="">Số điện thoại:</label>
-                                        <input type="text" class="form-control" id="" placeholder="Nhập số điện thoại"
+                                        <input type="text" class="form-control" id="" value="<?=$sodienthoai?>"
                                             name="sodienthoai">
-                                    </div>
-
-                                    <div class="mb-3 mt-3">
-                                        <label for="">Kích cỡ:</label>
-                                        <select class="form-select-sm form-control" name="kichco" id="">
-                                            <option value="xl">XL</option>
-                                            <option value="l">L</option>
-                                            <option value="m">M</option>
-                                            <option value="s">S</option>
-                                        </select>
                                     </div>
                                     <div class="mb-3 mt-3">
                                         <label for="">Địa chỉ:</label>
-                                        <input type="text" class="form-control" id="" placeholder="Nhập địa chỉ"
+                                        <input type="text" class="form-control" id="" value="<?=$diachi?>"
                                             name="diachi">
                                     </div>
 
@@ -91,17 +82,17 @@
                                     <div class="mb-3 mt-3">
                                         <label for="">Giới tính:</label>
                                         <div class="form-control">
-                                            <input type="radio" name="gioitinh" id="" value="1" checked> Nam
-                                            <input type="radio" name="gioitinh" id="" value="0"> Nữ
+                                            <input type="radio" name="gioitinh" id="" value="1" <?= $gioitinh==1 ? "checked" : "" ?>> Nam
+                                            <input type="radio" name="gioitinh" id="" value="0" <?= $gioitinh==0 ? "checked" : "" ?>> Nữ
                                         </div>
                                     </div>
                             </div>
                             <div class="mb-3 mt-3">
                                 <label for="">Cấp bậc:</label>
                                 <select class="form-select-sm form-control" name="capbac" id="">
-                                    <option value="0">Admin</option>
-                                    <option value="1">Manager</option>
-                                    <option value="2">User</option>
+                                    <option value="0" <?= $capbac ==0 ? "selected" : "" ?> >Admin</option>
+                                    <option value="1" <?= $capbac ==2 ? "selected" : "" ?> >Manager</option>
+                                    <option value="2" <?= $capbac ==3 ? "selected" : "" ?> >User</option>
 
                                 </select>
                             </div>
@@ -109,8 +100,8 @@
                             <div class="mb-3">
                                 <label for="">Trạng thái:</label>
                                 <div class="form-control">
-                                    <input type="radio" name="trangthai" id="" value="1" checked> Mở
-                                    <input type="radio" name="trangthai" id="" value="0"> Khóa
+                                    <input type="radio" name="trangthai" id="" value="1" <?= $trangthai == 0 ? "checked" : "" ?> > Mở
+                                    <input type="radio" name="trangthai" id="" value="0" <?= $trangthai == 1 ? "checked" : "" ?> > Khóa
                                 </div>
                             </div>
                         </div>

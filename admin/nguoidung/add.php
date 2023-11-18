@@ -42,7 +42,7 @@
                     <div class="col-sm-12">
                         <div class="white-box">
                             <div class="form-group">
-                                <form action="" method="post">
+                                <form action="" method="post" enctype="multipart/form-data">
                                     <button type="submit" class="btn btn-success text-white">Thêm mới</button>
                                     <button type="reset" class="btn btn-primary">Nhập lại</button>
                                     <a href="?act=nguoidung"><button type="button" class="btn btn-primary">Danh sách</button></a>
@@ -50,6 +50,7 @@
                                         <label for="">Họ và tên:</label>
                                         <input type="text" class="form-control" id="" placeholder="Nhập họ tên"
                                             name="hoten">
+                                            <input type="hidden" name="idnd" value="<?=$id?>">
                                     </div>
                                     <div class="mb-3 mt-3">
                                         <label for="">Email:</label>
@@ -70,16 +71,6 @@
                                         <input type="text" class="form-control" id="" placeholder="Nhập số điện thoại"
                                             name="sodienthoai">
                                     </div>
-
-                                    <div class="mb-3 mt-3">
-                                        <label for="">Kích cỡ:</label>
-                                        <select class="form-select-sm form-control" name="kichco" id="">
-                                            <option value="xl">XL</option>
-                                            <option value="l">L</option>
-                                            <option value="m">M</option>
-                                            <option value="s">S</option>
-                                        </select>
-                                    </div>
                                     <div class="mb-3 mt-3">
                                         <label for="">Địa chỉ:</label>
                                         <input type="text" class="form-control" id="" placeholder="Nhập địa chỉ"
@@ -90,7 +81,7 @@
                                     <div class="mb-3 mt-3">
                                         <label for="">Giới tính:</label>
                                         <div class="form-control">
-                                            <input type="radio" name="gioitinh" id="" value="1" checked> Nam
+                                            <input type="radio" name="gioitinh" id="" value="1"> Nam
                                             <input type="radio" name="gioitinh" id="" value="0"> Nữ
                                         </div>
                                     </div>
@@ -108,7 +99,7 @@
                             <div class="mb-3">
                                 <label for="">Trạng thái:</label>
                                 <div class="form-control">
-                                    <input type="radio" name="trangthai" id="" value="1" checked> Mở
+                                    <input type="radio" name="trangthai" id="" value="1"> Mở
                                     <input type="radio" name="trangthai" id="" value="0"> Khóa
                                 </div>
                             </div>

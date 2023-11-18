@@ -51,37 +51,42 @@
                                         <tr>
                                             <th></th>
                                             <th class="border-top-0">ID</th>
+                                            <th class="border-top-0">Hình ảnh</th>
                                             <th class="border-top-0">Họ và tên</th>
                                             <th class="border-top-0">Email</th>
                                             <th class="border-top-0">Mật khẩu</th>
                                             <th class="border-top-0">Số điện thoại</th>
                                             <th class="border-top-0">Địa chỉ</th>
-                                            <th class="border-top-0">Hình ảnh</th>
                                             <th class="border-top-0">Giới tính</th>
                                             <th class="border-top-0">Cấp bậc</th>
                                             <th class="border-top-0">Trạng thái</th>
                                             <th></th>
                                         </tr>
                                     </thead>
+                                    <?php foreach($nguoidung as $nd) : ?>
+                                        <?php extract($nd) ?>
                                     <tbody>
                                         <tr>
-                                            <td><input type="checkbox" name="" id=""></td>
-                                            <td>1</td>
-                                            <td>Deshmukh</td>
-                                            <td>Prohaska</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
+                                        <td class="text-center"><input type="checkbox" class="checkbox" name="id[]" value="<?=$id?>"></td>
+                                            <td><?= $id ?></td>
                                             <td>
-                                                <a href="?act=editnguoidung"><button type="button" class="btn btn-warning">Sửa</button></a>
-                                                <a href="?act=nguoidung"><button type="button" class="btn btn-danger">Xóa</button></a>
+                                                <img src="../../<?=$img_path . $hinh?>" width="50px" alt="">
+                                            </td>
+                                            <td><?= $hoten ?></td>
+                                            <td><?= $email ?></td>
+                                            <td><?= $matkhau ?></td>
+                                            <td><?= $sodienthoai ?></td>
+                                            <td><?= $diachi ?></td>
+                                            <td><?= $gioitinh == 0 ? "Nam" : "Nữ" ?></td>
+                                            <td><?= $capbac == 0 ? "Khách hàng" : "Admin" ?></td>
+                                            <td><?php echo $trangthai == 0 ? "Mở" : "Khóa" ?></td>
+                                            <td>
+                                                <a href="?act=editnguoidung&idnd=<?= $id ?>"><button type="button" class="btn btn-warning">Sửa</button></a>
+                                                <a href="?act=nguoidung&idnd=<?= $id ?>"><button type="button" class="btn btn-danger">Xóa</button></a>
                                             </td>
                                         </tr>
                                     </tbody>
+                                    <?php endforeach ?>
                                 </table>
                             </div>
                         </div>
