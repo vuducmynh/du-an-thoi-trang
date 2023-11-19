@@ -3,6 +3,7 @@ require_once '../model/pdo.php';
 require_once '../model/danhmuc.php';
 require_once '../model/sanpham.php';
 require_once '../model/nguoidung.php';
+require_once '../model/binhluan.php';
 $dsdm = load_all_danhmuc();
 $dssp = load_all_sanpham();
 
@@ -176,6 +177,17 @@ switch ($act) {
         }
         break;
     case 'binhluan':
+        if (isset($_GET['idbl'])) {
+            $idbl = $_GET['idbl'];
+            delete_nguoidung($idbl);
+            header("Location: ?act=nguoidung");
+        }
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $idbl = $_POST['idbl'];
+            delete_binhluan_multi_item($idbl);
+            header("Location: ?act=binhluan");
+        }
+        $binhluan = load_all_binhluan($id);
         $VIEW = "binhluan/list.php";
         break;
     case 'chitietbinhluan':
