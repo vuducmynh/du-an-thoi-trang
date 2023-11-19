@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 17, 2023 at 02:15 PM
+-- Generation Time: Nov 19, 2023 at 05:34 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -192,16 +192,16 @@ CREATE TABLE `sanpham` (
 --
 
 INSERT INTO `sanpham` (`id`, `tensanpham`, `hinh`, `thuonghieu`, `kichco`, `soluong`, `gia`, `mota`, `madanhmuc`, `trangthai`) VALUES
-(1, 'Áo sơ mi kẻ đỏ', 'hinh11.jpg', 'Zara', 'M', 10, 250000, 'Áo sơ mi nam màu trắng, có kẻ đỏ, chất liệu cotton, kiểu dáng trẻ trung, phù hợp với nhiều dịp', 1, 1),
-(2, 'Áo sơ mi bar', 'hinh12.jpg', 'Levi\'s', 'S', 15, 350000, 'Áo sơ mi nam màu xanh, có họa tiết bar, chất liệu cotton, kiểu dáng thời trang, phù hợp với nhiều phong cách', 1, 1),
-(3, 'Áo thũng đen', 'hinh13.jpg', 'Nike', 'XL', 20, 450000, 'Áo thũng nam màu đen, chất liệu thũng, kiểu dáng năng động, phù hợp với nhiều hoạt động', 2, 1),
-(4, 'Áo sơ mi thũng trắng', 'hinh14.jpg', 'Dior', 'M', 5, 550000, 'Áo sơ mi nam màu trắng, chất liệu thũng, kiểu dáng lịch sự, phù hợp với nhiều dịp', 1, 1),
-(5, 'Áo sơ mi kẻ xanh', 'hinh15.jpg', 'Adidas', 'Free size', 25, 150000, 'Áo sơ mi nam màu xanh, có kẻ xanh, chất liệu cotton, kiểu dáng trẻ trung, phù hợp với nhiều dịp', 1, 1),
-(6, 'Áo khoác nữ', 'hinh16.jpg', 'H&M', 'L', 8, 650000, 'Áo khoác nữ màu đỏ, chất liệu len, kiểu dáng ấm áp, phù hợp với mùa đông', 3, 1),
-(7, 'Áo len nam', 'hinh17.jpg', 'Uniqlo', 'M', 12, 200000, 'Áo len nam màu xám, chất liệu len, kiểu dáng ấm áp, phù hợp với mùa đông', 4, 1),
-(8, 'Áo dài nữ', 'hinh18.jpg', 'Gucci', 'S', 6, 750000, 'Áo dài nữ màu đen, chất liệu lụa, kiểu dáng truyền thống, phù hợp với các dịp lễ hội', 5, 1),
-(9, 'Áo vest nam', 'hinh19.jpg', 'Louis Vuitton', 'Medium', 4, 850000, 'Áo vest nam màu nâu, chất liệu da, kiểu dáng sang trọng, phù hợp với các buổi tiệc', 6, 1),
-(10, 'Áo phông nữ', 'hinh20.jpg', 'Ray-Ban', 'Free size', 18, 250000, 'Áo phông nữ màu hồng, chất liệu cotton, kiểu dáng thoải mái, phù hợp với mùa hè', 7, 1);
+(1, 'Áo sơ mi kẻ đỏ', 'hinh1', 'Zara', 'M', 10, 250000, 'Áo sơ mi nam màu trắng, có kẻ đỏ, chất liệu cotton, kiểu dáng trẻ trung, phù hợp với nhiều dịp', 1, 1),
+(2, 'Áo sơ mi bar', 'hinh2', 'Levi\'s', 'S', 15, 350000, 'Áo sơ mi nam màu xanh, có họa tiết bar, chất liệu cotton, kiểu dáng thời trang, phù hợp với nhiều phong cách', 1, 1),
+(3, 'Áo thũng đen', 'hinh3', 'Nike', 'XL', 20, 450000, 'Áo thũng nam màu đen, chất liệu thũng, kiểu dáng năng động, phù hợp với nhiều hoạt động', 2, 1),
+(4, 'Áo sơ mi thũng trắng', 'hinh4', 'Dior', 'M', 5, 550000, 'Áo sơ mi nam màu trắng, chất liệu thũng, kiểu dáng lịch sự, phù hợp với nhiều dịp', 1, 1),
+(5, 'Áo sơ mi kẻ xanh', 'hinh5', 'Adidas', 'Free size', 25, 150000, 'Áo sơ mi nam màu xanh, có kẻ xanh, chất liệu cotton, kiểu dáng trẻ trung, phù hợp với nhiều dịp', 1, 1),
+(6, 'Áo khoác nữ', 'hinh6', 'H&M', 'L', 8, 650000, 'Áo khoác nữ màu đỏ, chất liệu len, kiểu dáng ấm áp, phù hợp với mùa đông', 3, 1),
+(7, 'Áo len nam', 'hinh7', 'Uniqlo', 'M', 12, 200000, 'Áo len nam màu xám, chất liệu len, kiểu dáng ấm áp, phù hợp với mùa đông', 4, 1),
+(8, 'Áo dài nữ', 'hinh8', 'Gucci', 'S', 6, 750000, 'Áo dài nữ màu đen, chất liệu lụa, kiểu dáng truyền thống, phù hợp với các dịp lễ hội', 5, 1),
+(9, 'Áo vest nam', 'hinh9', 'Louis Vuitton', 'Medium', 4, 850000, 'Áo vest nam màu nâu, chất liệu da, kiểu dáng sang trọng, phù hợp với các buổi tiệc', 6, 1),
+(10, 'Áo phông nữ', 'hinh10', 'Ray-Ban', 'Free size', 18, 250000, 'Áo phông nữ màu hồng, chất liệu cotton, kiểu dáng thoải mái, phù hợp với mùa hè', 7, 1);
 
 --
 -- Indexes for dumped tables
