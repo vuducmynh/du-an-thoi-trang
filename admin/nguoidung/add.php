@@ -81,7 +81,7 @@
                                     <div class="mb-3 mt-3">
                                         <label for="">Giới tính:</label>
                                         <div class="form-control">
-                                            <input type="radio" name="gioitinh" id="" value="1"> Nam
+                                            <input type="radio" name="gioitinh" id="" value="1" checked> Nam
                                             <input type="radio" name="gioitinh" id="" value="0"> Nữ
                                         </div>
                                     </div>
@@ -91,7 +91,7 @@
                                 <select class="form-select-sm form-control" name="capbac" id="">
                                     <option value="0">Admin</option>
                                     <option value="1">Manager</option>
-                                    <option value="2">User</option>
+                                    <option value="2" checked>User</option>
 
                                 </select>
                             </div>
@@ -99,7 +99,7 @@
                             <div class="mb-3">
                                 <label for="">Trạng thái:</label>
                                 <div class="form-control">
-                                    <input type="radio" name="trangthai" id="" value="1"> Mở
+                                    <input type="radio" name="trangthai" id="" value="1" checked> Mở
                                     <input type="radio" name="trangthai" id="" value="0"> Khóa
                                 </div>
                             </div>
