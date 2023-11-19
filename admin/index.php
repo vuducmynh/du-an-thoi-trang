@@ -177,20 +177,23 @@ switch ($act) {
         }
         break;
     case 'binhluan':
-        if (isset($_GET['idbl'])) {
-            $idbl = $_GET['idbl'];
-            delete_nguoidung($idbl);
-            header("Location: ?act=nguoidung");
-        }
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $idbl = $_POST['idbl'];
-            delete_binhluan_multi_item($idbl);
-            header("Location: ?act=binhluan");
-        }
-        $binhluan = load_all_binhluan($id);
+        $binhluan = load_all_binhluan_sanpham();
         $VIEW = "binhluan/list.php";
         break;
     case 'chitietbinhluan':
+        if (isset($_GET['masanpham'])) {
+            $masanpham =$_GET['masanpham'];
+            $blct = load_all_binhluan_chitiet($masanpham);
+        }
+        if (isset($_GET['maxoa'])) {
+            $masanpham =$_GET['xoa'];
+            deletet_binhluan($masanpham);
+        }
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $id = $_POST['id'];
+            delete_binhluan_multi_item($id);
+            header("Location: ?act=binhluan");
+        }
         $VIEW = "binhluan/chitietbl.php";
         break;
 

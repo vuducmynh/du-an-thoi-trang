@@ -53,19 +53,21 @@
                                             <th></th>
                                         </tr>
                                     </thead>
-                                    <?php foreach($): ?>
+                                    <?php foreach($binhluan as $bl): ?>
+                                        <?php extract($bl) ?>
                                     <tbody>
-                                            <td>1</td>
-                                            <td>Deshmukh</td>
-                                            <td>Prohaska</td>
-                                            <td>@Genelia</td>
-                                            <td></td>
+                                            <td><?= $id?></td>
+                                            <td><?= $tensanpham?></td>
+                                            <td><?= $tongsobl?></td>
+                                            <td><?= $cunhat?></td>
+                                            <td><?= $moinhat?></td>
                                             <td>
-                                                <a href="?act=chitietbinhluan" class="btn btn-secondary text-white">Chi tiết bình luận</a>
+                                                <a href="?act=chitietbinhluan&masanpham=<?=$id?>" class="btn btn-secondary text-white">Chi tiết bình luận</a>
                                             </td>
                                         </tr>
                       
                                     </tbody>
+                                    <?php endforeach ?>
                                 </table>
                             </div>
                         </div>

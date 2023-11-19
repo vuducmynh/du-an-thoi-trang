@@ -12,7 +12,7 @@
             <div class="page-breadcrumb bg-white">
                 <div class="row align-items-center">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">Quản lý bình luận</h4>
+                        <h4 class="page-title">Quản lý bình luận của sản phẩm</h4>
                     </div>
                     <!-- <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                         <div class="d-md-flex">
@@ -57,18 +57,21 @@
                                             <th></th>
                                         </tr>
                                     </thead>
+                                    <?php foreach($blct as $bl): ?>
+                                        <?php extract($bl) ?>
                                     <tbody>
-                                        <td><input type="checkbox" name="" id=""></td>
-                                            <td>Deshmukh</td>
-                                            <td>Prohaska</td>
-                                            <td>@Genelia</td>
-                                            <td></td>
+                                        <td><input type="checkbox" class="checkbox" name="id[]" value="<?=$id?>"></td>
+                                            <td><?= $id?></td>
+                                            <td><?= $noidung?></td>
+                                            <td><?= $thoigian?></td>
+                                            <td><?= $hoten?></td>
                                             <td>
-                                                <a href="?act=chitietbinhluan" class="btn btn-danger text-white">Xóa</a>
+                                                <a href="?act=chitietbinhluan&maxoa" class="btn btn-danger text-white">Xóa</a>
                                             </td>
                                         </tr>
                       
                                     </tbody>
+                                    <?php endforeach ?>
                                 </table>
                             </div>
                         </div>
