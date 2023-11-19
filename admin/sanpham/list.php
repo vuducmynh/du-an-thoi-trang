@@ -41,10 +41,11 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="white-box">
+                            <form action="?act=sanpham" method="post">
                             <a href="?act=addsanpham"><button type="button" class="btn btn-success text-white">Thêm sản phẩm</button></a>
                             <button type="button" id="checkall" class="btn btn-primary">Chọn tất cả</button>
                             <button type="button" id="clearall" class="btn btn-primary">Bỏ chọn tất cả</button>
-                            <button type="submit" id="deleteall" class="btn btn-danger text-white">Xóa các mục chọn</button>
+                            <button type="submit" id="deleteall" class="btn btn-danger text-white" onclick="return confirm('Bạn có muốn xóa không')">Xóa các mục chọn</button>
                             <div class="table-responsive">
                                 <table class="table text-nowrap">
                                     <thead>
@@ -67,11 +68,11 @@
                                             extract($sp);
                                         ?>
                                         <tr>
-                                            <td><input type="checkbox" name="" id=""></td>
+                                            <td class="text-center"><input type="checkbox" class="checkbox" name="id[]" value="<?=$id?>"></td>
                                             <td><?=$id?></td>
                                             <td><?=$tensanpham?></td>
                                             <td>
-                                                <img src="/assets/images/product/ . <?=$hinh?>" alt=" " width="200px">
+                                                <img src="../assets/images/product/<?=$hinh?>"  alt=" " width="100px">
                                             </td>
                                             <td><?=$thuonghieu?></td>
                                             <td><?=$kichco?></td>
@@ -84,14 +85,15 @@
                                                 <?=$trangthai == 1 ? 'Hiện' : 'Ẩn'?>
                                             </td>
                                             <td>
-                                                <a href="?act=editsanpham&idsp<?=$id?>"><button type="button" class="btn btn-warning">Sửa</button></a>
-                                                <a href="?act=sanpham&idsp<?=$id?>"><button type="button" class="btn btn-danger">Xóa</button></a>
+                                                <a href="?act=editsanpham&idsp=<?=$id?>"><button type="button" class="btn btn-warning">Sửa</button></a>
+                                                <a href="?act=sanpham&idsp=<?=$id?>"><button type="button" class="btn btn-danger" onclick="return confirm('Bạn có muốn xóa không')">Xóa</button></a>
                                             </td>
                                         </tr>
                                         <?php endforeach ?>
                                     </tbody>
                                 </table>
                             </div>
+                            </form>
                         </div>
                     </div>
                 </div>

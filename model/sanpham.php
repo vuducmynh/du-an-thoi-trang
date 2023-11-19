@@ -16,15 +16,15 @@ function load_one_sanpham($id)
     $sql = "SELECT * FROM sanpham WHERE id=?";
     return pdo_query_one($sql, $id);
 }
-function insert_sanpham($tensanpham, $hinh, $thuongheu, $kichco, $soluong, $gia, $mota, $madanhmuc, $trangthai)
+function insert_sanpham($tensanpham, $hinh, $thuonghieu, $kichco, $soluong, $gia, $mota, $madanhmuc, $trangthai)
 {
-    $sql = "INSERT INTO sanpham(tensanpham, hinh, thuongheu, kichco, soluong, gia, mota, madanhmuc, trangthai) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)";
-    pdo_execute($sql, $tensanpham, $hinh, $thuongheu, $kichco, $soluong, $gia, $mota, $madanhmuc, $trangthai);
+    $sql = "INSERT INTO sanpham(tensanpham, hinh, thuonghieu, kichco, soluong, gia, mota, madanhmuc, trangthai) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)";
+    pdo_execute($sql, $tensanpham, $hinh, $thuonghieu, $kichco, $soluong, $gia, $mota, $madanhmuc, $trangthai);
 }
-function update_sanpham($id, $tensanpham, $hinh, $thuongheu, $kichco, $soluong, $gia, $mota, $madanhmuc, $trangthai)
+function update_sanpham($id, $tensanpham, $hinh, $thuonghieu, $kichco, $soluong, $gia, $mota, $madanhmuc, $trangthai)
 {
-    $sql = "UPDATE sanpham SET tensanpham=?, hinh=?, thuongheu=?, kichco=?, soluong=?, gia=?, mota=?, madanhmuc=?, trangthai=? WHERE id=?";
-    pdo_execute($sql, $tensanpham, $hinh, $thuongheu, $kichco, $soluong, $gia, $mota, $madanhmuc, $trangthai, $id);
+    $sql = "UPDATE sanpham SET tensanpham=?, hinh=?, thuonghieu=?, kichco=?, soluong=?, gia=?, mota=?, madanhmuc=?, trangthai=? WHERE id=?";
+    pdo_execute($sql, $tensanpham, $hinh, $thuonghieu, $kichco, $soluong, $gia, $mota, $madanhmuc, $trangthai, $id);
 }
 //Xóa cứng
 function delete_sanpham($id)
@@ -32,7 +32,16 @@ function delete_sanpham($id)
     $sql = "DELETE FROM sanpham WHERE id=?";
     pdo_execute($sql, $id);
 }
-
+function delete_sampham_multi_item($id) {
+    $masp = '';
+    foreach ($id as $item) {
+        $masp .= $item . ", ";
+    }
+    //Xóa dấu thừa (,) ở bên phải
+    $masp = rtrim($masp, ", ");
+    $sql = "DELETE FROM sanpham WHERE id IN ($masp)";
+    pdo_execute($sql);
+}
 //Xóa mềm
 function delete_sanpham_mem($id)
 {

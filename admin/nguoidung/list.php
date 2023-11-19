@@ -41,10 +41,11 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="white-box">
+                            <form action="?act=nguoidung" method="post">
                             <a href="?act=addnguoidung"><button type="button" class="btn btn-success text-white">Thêm người dùng</button></a>
                             <button type="button" id="checkall" class="btn btn-primary">Chọn tất cả</button>
                             <button type="button" id="clearall" class="btn btn-primary">Bỏ chọn tất cả</button>
-                            <button type="submit" id="deleteall" class="btn btn-danger text-white">Xóa các mục chọn</button>
+                            <button type="submit" id="deleteall" class="btn btn-danger text-white" onclick="return confirm('Bạn có muốn xóa không')">Xóa các mục chọn</button>
                             <div class="table-responsive">
                                 <table class="table text-nowrap">
                                     <thead>
@@ -70,25 +71,34 @@
                                         <td class="text-center"><input type="checkbox" class="checkbox" name="id[]" value="<?=$id?>"></td>
                                             <td><?= $id ?></td>
                                             <td>
-                                                <img src="../../<?=$img_path . $hinh?>" width="50px" alt="">
+                                                <img src="../assets/images/user/<?=$hinh?>" width="50px" alt="">
                                             </td>
                                             <td><?= $hoten ?></td>
                                             <td><?= $email ?></td>
                                             <td><?= $matkhau ?></td>
                                             <td><?= $sodienthoai ?></td>
                                             <td><?= $diachi ?></td>
-                                            <td><?= $gioitinh == 0 ? "Nam" : "Nữ" ?></td>
-                                            <td><?= $capbac == 0 ? "Khách hàng" : "Admin" ?></td>
-                                            <td><?php echo $trangthai == 0 ? "Mở" : "Khóa" ?></td>
+                                            <td><?= $gioitinh == 1 ? "Nam" : "Nữ" ?></td>
+                                            <td>
+                                                <?php 
+                                                    if ($capbac==0) {
+                                                        echo "Admin";
+                                                    } else if($capbac==1){
+                                                        echo 'Manager';
+                                                    } else echo 'User';
+                                                ?>
+                                            </td>
+                                            <td><?php echo $trangthai == 1 ? "Mở" : "Khóa" ?></td>
                                             <td>
                                                 <a href="?act=editnguoidung&idnd=<?= $id ?>"><button type="button" class="btn btn-warning">Sửa</button></a>
-                                                <a href="?act=nguoidung&idnd=<?= $id ?>"><button type="button" class="btn btn-danger">Xóa</button></a>
+                                                <a href="?act=nguoidung&idnd=<?= $id ?>"><button type="button" class="btn btn-danger" onclick="return confirm('Bạn có muốn xóa không')">Xóa</button></a>
                                             </td>
                                         </tr>
                                     </tbody>
                                     <?php endforeach ?>
                                 </table>
                             </div>
+                            </form>
                         </div>
                     </div>
                 </div>

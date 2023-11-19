@@ -51,18 +51,19 @@ switch ($act) {
             $VIEW = "danhmuc/edit.php";
         }
         break;
-
+    
+    //SẢN PHẨM
     case 'sanpham':
         if (isset($_GET['idsp'])) {
             $idsp = $_GET['idsp'];
             delete_sanpham($idsp);
             header("location: ?act=sanpham");
         }
-        // if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        //     $idsp = $_POST['id'];
-        //     delete_danhmuc_multi_item($idsp);
-        //     header("location: ?act=sanpham");
-        // }
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $idsp = $_POST['id'];
+            delete_sampham_multi_item($idsp);
+            header("location: ?act=sanpham");
+        }
         $VIEW = "sanpham/list.php";
         break;
     case 'addsanpham':
@@ -77,7 +78,7 @@ switch ($act) {
             $trangthai = $_POST['trangthai'];
             $mota = $_POST['mota'];
             $hinh = null;
-            if (empty($img['name'])) {
+            if (!empty($img['name'])) {
                 $hinh = time() . '_' . $img['name'];
                 move_uploaded_file($img['tmp_name'], "../assets/images/product/" . $hinh);
             }
@@ -87,7 +88,29 @@ switch ($act) {
         $VIEW = "sanpham/add.php";
         break;
     case 'editsanpham':
-        $VIEW = "sanpham/edit.php";
+        if (isset($_GET['idsp'])) {
+            $idsp = $_GET['idsp'];
+            $sp = load_one_sanpham($idsp);
+            extract($sp);
+            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                $tensanpham = $_POST['tensanpham'];
+                $img = $_FILES['hinh'];
+                $thuonghieu = $_POST['thuonghieu'];
+                $kichco = $_POST['kichco'];
+                $soluong = $_POST['soluong'];
+                $gia = $_POST['gia'];
+                $madanhmuc = $_POST['madanhmuc'];
+                $trangthai = $_POST['trangthai'];
+                $mota = $_POST['mota'];
+                if (!empty($img['name'])) {
+                    $hinh = time() . '_' . $img['name'];
+                    move_uploaded_file($img['tmp_name'], "../assets/images/product/" . $hinh);
+                }
+                update_sanpham($idsp,$tensanpham, $hinh, $thuonghieu, $kichco, $soluong, $gia, $mota, $madanhmuc, $trangthai);
+                header('location: ?act=sanpham');
+            }
+            $VIEW = "sanpham/edit.php";
+        }
         break;
 
         // NGƯỜI DÙNG
@@ -98,7 +121,7 @@ switch ($act) {
             header("Location: ?act=nguoidung");
         }
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $idnd = $_POST['idnd'];
+            $idnd = $_POST['id'];
             delete_nguoidung_multi_item($idnd);
             header("Location: ?act=nguoidung");
         }
@@ -107,14 +130,13 @@ switch ($act) {
         break;
     case 'addnguoidung':
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $idnd = $_POST['idnd'];
             $hoten = $_POST['hoten'];
             $email = $_POST['email'];
             $matkhau = $_POST['matkhau'];
             $sodienthoai = $_POST['sodienthoai'];
             $diachi = $_POST['diachi'];
             $hinh = $_FILES['hinh']['name'];
-            $target_dir = "../assets/image/";
+            $target_dir = "../assets/images/user/";
             $target_file = $target_dir . basename($_FILES['hinh']['name']);
             move_uploaded_file($_FILES["hinh"]["tmp_name"], $target_file);
             $gioitinh = $_POST['gioitinh'];
@@ -137,17 +159,16 @@ switch ($act) {
                 $matkhau = $_POST['matkhau'];
                 $sodienthoai = $_POST['sodienthoai'];
                 $diachi = $_POST['diachi'];
-                $hinh = $_FILES['hinh']['name'];
-                if (!empty($hinh)) {
-                    $target_dir = "../assets/image/";
-                    $target_file = $target_dir . basename($_FILES['hinh']['name']);
-                    move_uploaded_file($_FILES["hinh"]["tmp_name"], $target_file);
-                } else {
-                    $hinh = $nguoidung['hinh'];
-                }
                 $gioitinh = $_POST['gioitinh'];
                 $capbac = $_POST['capbac'];
                 $trangthai = $_POST['trangthai'];
+                $img = $_FILES['hinh'];
+
+                if (!empty($img['name'])) {
+                    $hinh = time() . '_' . $img['name'];
+                    move_uploaded_file($img["tmp_name"], "../assets/images/user/" . $hinh);
+                }
+               
                 update_nguoidung($idnd, $email, $matkhau, $hoten, $sodienthoai, $diachi, $hinh, $gioitinh, $capbac, $trangthai);
                 header("Location: ?act=nguoidung");
             }

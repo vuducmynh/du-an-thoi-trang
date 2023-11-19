@@ -42,7 +42,7 @@
                     <div class="col-sm-12">
                         <div class="white-box">
                             <div class="form-group">
-                                <form action="" method="post">
+                                <form action="?act=addsanpham" method="post" enctype="multipart/form-data">
                                     <button type="submit" class="btn btn-success text-white">Thêm mới</button>
                                     <button type="reset" class="btn btn-primary">Nhập lại</button>
                                     <a href="?act=sanpham"><button type="button" class="btn btn-primary">Danh sách</button></a>
@@ -78,10 +78,11 @@
                                     <div class="mb-3 mt-3">
                                       <label for="">Loại hàng:</label>
                                       <select class="form-select-sm form-control" name="madanhmuc" id="">
-                                        <option value="">Áo sơ mi</option>
-                                        <option value="">Áo thun</option>
-                                        <option value="">M</option>
-                                        <option value="">S</option>
+                                        <?php foreach ($dsdm as $dm):
+                                          extract($dm);
+                                          ?>
+                                        <option value="<?=$id?>"><?=$tendanhmuc?></option>
+                                        <?php endforeach ?>
                                       </select>
                                     </div>
                     
