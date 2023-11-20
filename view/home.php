@@ -893,7 +893,7 @@
         <!-- Service Area End Here -->
 
         <!-- Begin Banner Area -->
-        <div class="banner-area">
+        <!-- <div class="banner-area">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-6 custom-xxs-col">
@@ -925,7 +925,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Banner Area End Here -->
 
         <!-- Begin Product Area -->
@@ -1303,7 +1303,7 @@
         <!-- Product Area End Here -->
 
         <!-- Begin Banner Area Two -->
-        <div class="banner-area banner-area-2">
+        <!-- <div class="banner-area banner-area-2">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -1326,7 +1326,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Banner Area Two End Here -->
 
         <!-- Begin Product Tab Area -->
@@ -2289,7 +2289,7 @@
         <!-- Product Tab Area End Here -->
 
         <!-- Begin Latest Blog Area -->
-        <div class="latest-blog_area">
+        <!-- <div class="latest-blog_area">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -2417,11 +2417,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Latest Blog Area End Here -->
 
         <!-- Begin Kenne's Banner Area Four -->
-        <div class="kenne-banner_area kenne-banner_area-4">
+        <!-- <div class="kenne-banner_area kenne-banner_area-4">
             <div class="banner-img"></div>
             <div class="banner-content">
                 <h3>Get exclusive Products.</h3>
@@ -2434,11 +2434,11 @@
                     <a class="kenne-btn transparent-btn" href="shop-left-sidebar.html">Shop Now</a>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Kenne's Banner Area Four End Here -->
 
         <!-- Begin Kenne's Instagram Area -->
-        <div class="kenne-instagram_area">
+        <!-- <div class="kenne-instagram_area">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -2549,5 +2549,5 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Kenne's Instagram Area End Here -->
