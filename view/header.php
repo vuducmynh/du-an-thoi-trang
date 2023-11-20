@@ -46,13 +46,13 @@
     <div class="main-wrapper">
 
         <!-- Begin Loading Area -->
-        <div class="loading">
+        <!-- <div class="loading">
             <div class="text-center middle">
                 <span class="loader">
                     <span class="loader-inner"></span>
                 </span>
             </div>
-        </div>
+        </div> -->
         <!-- Loading Area End Here -->
 
         <!-- Begin Main Header Area Two -->

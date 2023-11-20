@@ -13,7 +13,7 @@ $act = $_GET['act'] ?? '';
 $check = true;
 switch ($act) {
     case 'home':
-        $VIEW = "home/home.php";
+        $VIEW = "home.php";
         break;
 
     case 'danhmuc':

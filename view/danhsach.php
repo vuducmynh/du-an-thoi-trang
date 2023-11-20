@@ -50,84 +50,13 @@
                                     <h5>Danh Mục Sản Phẩm</h5>
                                 </div>
                                 <div class="sidebar-categories_menu">
+                                    
                                     <ul>
-                                        <li class="has-sub"><a href="javascript:void(0)">Appare</a>
-                                            <!-- <ul>
-                                                <li><a href="javascript:void(0)">Maxime</a></li>
-                                                <li><a href="javascript:void(0)">Veniam Sed</a></li>
-                                                <li><a href="javascript:void(0)">Praesentium</a></li>
-                                                <li><a href="javascript:void(0)">Eligendi</a></li>
-                                                <li><a href="javascript:void(0)">Maxime</a></li>
-                                                <li><a href="javascript:void(0)">Ex deserunt</a></li>
-                                                <li><a href="javascript:void(0)">Doloremque</a></li>
-                                                <li><a href="javascript:void(0)">Facilis</a></li>
-                                                <li><a href="javascript:void(0)">Cumque Magni</a></li>
-                                            </ul> -->
-                                        </li>
-                                        <li><a href="javascript:void(0)">Footwear</a></li>
-                                        <li class="has-sub"><a href="javascript:void(0)">Sportswear</a>
-                                            <ul>
-                                                <li><a href="javascript:void(0)">Daylesford</a></li>
-                                                <li><a href="javascript:void(0)">Delaware</a></li>
-                                                <li><a href="javascript:void(0)">Fayence</a></li>
-                                                <li><a href="javascript:void(0)">Mable</a></li>
-                                                <li><a href="javascript:void(0)">Mobo</a></li>
-                                                <li><a href="javascript:void(0)">Pippins</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="javascript:void(0)">Traditional</a></li>
-                                        <li><a href="javascript:void(0)">Formal Wear</a></li>
-                                        <li class="has-sub"><a href="javascript:void(0)">Accessories</a>
-                                            <ul>
-                                                <li><a href="javascript:void(0)">Bedroom Furniture</a></li>
-                                                <li><a href="javascript:void(0)">Chairs</a></li>
-                                                <li><a href="javascript:void(0)">Coffee Tables</a></li>
-                                                <li><a href="javascript:void(0)">Console Tables</a></li>
-                                                <li><a href="javascript:void(0)">End Tables</a></li>
-                                                <li><a href="javascript:void(0)">Living Room Sets</a></li>
-                                                <li><a href="javascript:void(0)">Ottomans & Storage Ottomans</a></li>
-                                                <li><a href="javascript:void(0)">Sofas & Couches</a></li>
-                                                <li><a href="javascript:void(0)">TV Stands</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="has-sub"><a href="javascript:void(0)">Watches & Jewelry</a>
-                                            <ul>
-                                                <li><a href="javascript:void(0)">Candleholders</a></li>
-                                                <li><a href="javascript:void(0)">Candles</a></li>
-                                                <li><a href="javascript:void(0)">Clocks</a></li>
-                                                <li><a href="javascript:void(0)">Floor Mirrors</a></li>
-                                                <li><a href="javascript:void(0)">Lamps & Lighting</a></li>
-                                                <li><a href="javascript:void(0)">Rugs</a></li>
-                                                <li><a href="javascript:void(0)">Runners</a></li>
-                                                <li><a href="javascript:void(0)">Wall Decor</a></li>
-                                                <li><a href="javascript:void(0)">Wall Mirrors</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="has-sub"><a href="javascript:void(0)">Luggage</a>
-                                            <ul>
-                                                <li><a href="javascript:void(0)">Bowls</a></li>
-                                                <li><a href="javascript:void(0)">Cups, Mugs & Saucers</a></li>
-                                                <li><a href="javascript:void(0)">Cutting Boards</a></li>
-                                                <li><a href="javascript:void(0)">Dinnerware Sets</a></li>
-                                                <li><a href="javascript:void(0)">Flatware</a></li>
-                                                <li><a href="javascript:void(0)">Glassware & Drinkware</a></li>
-                                                <li><a href="javascript:void(0)">Knife Sets</a></li>
-                                                <li><a href="javascript:void(0)">Plates</a></li>
-                                                <li><a href="javascript:void(0)">Serveware</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="has-sub"><a href="javascript:void(0)">Handbag</a>
-                                            <ul>
-                                                <li><a href="javascript:void(0)">Coffee & side tables</a></li>
-                                                <li><a href="javascript:void(0)">Living room lighting</a></li>
-                                                <li><a href="javascript:void(0)">Living room storage</a></li>
-                                                <li><a href="javascript:void(0)">Living room textiles & rugs</a></li>
-                                                <li><a href="javascript:void(0)">Sofas & armchairs</a></li>
-                                                <li><a href="javascript:void(0)">TV & media furniture</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="javascript:void(0)">Cosmetic</a></li>
-                                        <li><a href="javascript:void(0)">Uncategorized</a></li>
+                                    <?php foreach($dsdm as $dm):
+                                        extract($dm);
+                                        ?>
+                                        <li><a href="?act=chitietsanpham&iddm=<?=$id?>"><?=$tendanhmuc?></a></li>
+                                        <?php endforeach ?>
                                     </ul>
                                 </div>
                             </div>
@@ -147,7 +76,7 @@
                                     </li>
                                 </ul>
                             </div> -->
-                            <div class="kenne-sidebar_categories list-product_area">
+                            <!-- <div class="kenne-sidebar_categories list-product_area">
                                 <div class="kenne-categories_title">
                                     <h5>Recent Post</h5>
                                 </div>
@@ -335,8 +264,8 @@
                                     </div>
 
                                 </div>
-                            </div>
-                            <div class="kenne-sidebar_categories">
+                            </div> -->
+                            <!-- <div class="kenne-sidebar_categories">
                                 <div class="kenne-categories_title kenne-tags_title">
                                     <h5>Product Tags</h5>
                                 </div>
@@ -350,7 +279,7 @@
                                     <li><a href="javascript:void(0)">Men</a></li>
                                     <li><a href="javascript:void(0)">Women</a></li>
                                 </ul>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="col-xl-9 col-lg-8 order-1 order-lg-2">
@@ -359,9 +288,9 @@
                                 <a class="active grid-3" data-target="gridview-3" data-toggle="tooltip" data-placement="top" title="Grid View"><i class="fa fa-th"></i></a>
                                 <a class="list" data-target="listview" data-toggle="tooltip" data-placement="top" title="List View"><i class="fa fa-th-list"></i></a>
                             </div>
-                            <div class="product-page_count">
+                            <!-- <div class="product-page_count">
                                 <p>Showing 1–9 of 40 results</p>
-                            </div>
+                            </div> -->
                             <div class="product-item-selection_area">
                                 <div class="product-short">
                                     <label class="select-label">Short By:</label>
@@ -371,15 +300,15 @@
                                         <option value="3">Name, Z to A</option>
                                         <option value="4">Price, low to high</option>
                                         <option value="5">Price, high to low</option>
-                                        <option value="5">Rating (Highest)</option>
-                                        <option value="5">Rating (Lowest)</option>
-                                        <option value="5">Model (A - Z)</option>
-                                        <option value="5">Model (Z - A)</option>
                                     </select>
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="shop-product-wrap grid gridview-3 row">
+                            <?php foreach($dssp as $sp): 
+                                extract($sp);
+                                ?>
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="product-item">
                                     <div class="single-product">
@@ -412,7 +341,7 @@
                                                     <span class="new-price">$46.91</span>
                                                     <span class="old-price">$50.99</span>
                                                 </div>
-                                                <div class="rating-box">
+                                                <!-- <div class="rating-box">
                                                     <ul>
                                                         <li><i class="ion-ios-star"></i></li>
                                                         <li><i class="ion-ios-star"></i></li>
@@ -421,7 +350,7 @@
                                                         <li class="silver-color"><i class="ion-ios-star-outline"></i>
                                                         </li>
                                                     </ul>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -451,13 +380,13 @@
                                                         </li>
                                                     </ul>
                                                 </div>
-                                                <div class="product-short_desc">
+                                                <!-- <div class="product-short_desc">
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                                                         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                                                         enim ad minim veniam, quis nostrud exercitation ullamco,Proin
                                                         lectus ipsum, gravida et mattis vulputate, tristique ut lectus
                                                     </p>
-                                                </div>
+                                                </div> -->
                                             </div>
                                             <div class="add-actions">
                                                 <ul>
@@ -476,7 +405,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6">
+                            <?php endforeach ?>
+                            
+                            <!-- <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="product-item">
                                     <div class="single-product">
                                         <div class="product-img">
@@ -569,8 +500,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6">
+                            </div> -->
+                            <!-- <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="product-item">
                                     <div class="single-product">
                                         <div class="product-img">
@@ -665,8 +596,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6">
+                            </div> -->
+                            <!-- <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="product-item">
                                     <div class="single-product">
                                         <div class="product-img">
@@ -759,8 +690,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6">
+                            </div> -->
+                            <!-- <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="product-item">
                                     <div class="single-product">
                                         <div class="product-img">
@@ -851,8 +782,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6">
+                            </div> -->
+                            <!-- <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="product-item">
                                     <div class="single-product">
                                         <div class="product-img">
@@ -945,8 +876,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6">
+                            </div> -->
+                            <!-- <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="product-item">
                                     <div class="single-product">
                                         <div class="product-img">
@@ -1040,8 +971,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6">
+                            </div> -->
+                            <!-- <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="product-item">
                                     <div class="single-product">
                                         <div class="product-img">
@@ -1134,8 +1065,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6">
+                            </div> -->
+                            <!-- <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="product-item">
                                     <div class="single-product">
                                         <div class="product-img">
@@ -1228,7 +1159,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="row">
                             <div class="col-lg-12">

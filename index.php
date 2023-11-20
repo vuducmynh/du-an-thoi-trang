@@ -1,5 +1,10 @@
 <?php
 require_once "model/pdo.php";
+require_once "model/danhmuc.php";
+require_once "model/sanpham.php";
+$dsdm = load_all_danhmuc();
+$dssp = load_all_sanpham_hien();
+
 
 // header của trang home không cắt
 if (isset($_GET['act']) && $_GET['act'] != "") {
